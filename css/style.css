@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  margin: auto;
+  max-width: min(90%, 1100px);
+}
+
+.navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4.4rem;
+}
+.navbar ul li:last-child a {
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  color: #3EBFFF;
+  border-radius: 4rem;
+  background-color: #fff;
+  font-weight: 700;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2.2rem;
+}
+.navbar ul a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 800px) {
+  .navbar a {
+    font-size: 2rem !important;
+  }
+  .navbar ul li:last-child a {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+  }
+}
+.hero {
+  height: 100vh;
+  max-width: 100vw;
+  background: url(../../assets/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  color: #fff;
+  padding-top: 17.1rem;
+  font-family: "Fraunces", serif;
+}
+.hero svg {
+  margin-top: 9.8rem;
+}
+
+@media (min-width: 800px) {
+  .hero {
+    background: url("../assets/desktop/image-header.jpg");
+    background-position: center;
+  }
+  .hero h1 {
+    font-size: 6.4rem;
+  }
+  .hero svg {
+    height: 10rem;
+    margin-top: 4rem;
+  }
+}
+.grid picture img {
+  width: 100%;
+}
+.grid div {
+  margin-block: 8rem;
+}
+.grid div h3 {
+  font-size: 3.2rem;
+  color: #23303E;
+  font-family: "Fraunces", serif;
+  margin-bottom: 1.6rem;
+}
+.grid div p {
+  font-size: 1.6rem;
+  color: #47525C;
+  font-family: "Barlow", sans-serif;
+  line-height: 2.6rem;
+  margin-bottom: 1.6rem;
+}
+.grid div.transform a {
+  text-decoration: none;
+  color: #23303E;
+  font-size: 2.4rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+.grid div.transform a:before {
+  content: "";
+  width: 100%;
+  height: 0.9rem;
+  background-color: #FFE985;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 3.3rem;
+}
+.grid div.show a {
+  text-decoration: none;
+  color: #23303E;
+  font-size: 2.4rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+.grid div.show a:before {
+  content: "";
+  width: 100%;
+  height: 0.9rem;
+  background-color: #FFBFB8;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 3.3rem;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid div {
+    padding-inline: 9.6rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+@mixin text($size, $color, $family) {
+    font-size: $size;
+    color: $color;
+    font-family: $family;
+}
+
+@mixin btn($color) {
+            text-decoration: none;
+            color: $dark-blue;
+            font-size: $text-size-300;
+            font-family: $text-family-secundary;
+            font-weight: 700;
+            position: relative;
+            
+            @if $color == amarelo{
+            &:before{
+                content: "";
+                width: 100%;
+                height: .9rem;
+                background-color: $light-yellow;
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+                border-radius: 3.3rem;
+            }
+            }@else{
+                &:before{
+                    content: "";
+                    width: 100%;
+                    height: .9rem;
+                    background-color: $light-red;
+                    position: absolute;
+                    bottom: 0;
+                    z-index: -1;
+                    border-radius: 3.3rem;
+                }
+            }
+}

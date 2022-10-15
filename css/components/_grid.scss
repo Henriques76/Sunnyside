@@ -1,0 +1,41 @@
+@import "../abstract/variables";
+@import "../abstract/mixin";
+
+.grid{
+    picture{
+        img{
+            width: 100%;
+        }
+    }
+    div{
+        margin-block: $space * 10;
+    
+        h3{
+            @include text($text-size-400, $dark-blue, $text-family-primary);
+            margin-bottom: $space * 2;
+        }
+        p{
+            @include text($text-size-100, $dark-gray, $text-family-secundary);
+            line-height: 2.6rem;
+            margin-bottom: $space * 2;
+        }
+        &.transform a{
+            @include btn(amarelo)
+        }
+        &.show a{
+            @include btn(verde)
+        }
+
+    }
+} 
+@media(min-width: 800px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        div{
+            padding-inline: 9.6rem;
+        }
+    }
+}
+        
